@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>JJMP Webpage: v1.0</title>
+        <style>
+            .title{
+                border: 2px solid white;
+                border-radius: 50px;
+                align-self: center;
+            }
+            .navigator, footer{
+                background: linear-gradient(90deg, black, white);
+                width: 100%;
+                border-top: 2px solid dimgray;
+                border-bottom: 2px solid dimgray;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            li{
+                text-decoration: none;
+            }
+            body{
+                background: linear-gradient(90deg, lightblue, lightpink);
+            }
+            div{
+                padding: 10px;
+            }
+            h1{
+                font-family: Impact;
+                color: steelblue;
+            }
+            main{
+                background-color: whitesmoke;
+                border-radius: 50px;
+                border: 2px solid darkgray;
+                box-shadow: 0 5px 10px black;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .PictureOfMe{
+                width: 500px;
+                padding: auto;
+                border-radius: 50px;
+                box-shadow: 0 5px 10px black, 0 5px 20px gray;
+                border: 5px solid cadetblue;
+            }
+            .LogoOnPage{
+                height: 350px;
+                box-shadow: 0 5px 10px black, 0 5px 20px gray;
+                padding: auto;
+            }
+            footer{
+                height: 100px;
+            }
+            #MyCarousel{
+                background-color: lavender;
+                border: 2px solid rgb(81,81,81);
+                border-radius: 50px;
+            }
+            .carousel-control-prev{
+                border-radius: 50px;
+                background: linear-gradient(90deg, darkgray, lavender);
+            }
+            .carousel-control-next{
+                border-radius: 50px;
+                background: linear-gradient(90deg, lavender, darkgray);
+            }
+            .social{
+                font-size: 40px;
+                text-decoration: none;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            .fa-facebook{
+                color: royalblue;
+            }
+            .fa-linkedin{
+                color: steelblue;
+            }
+            .fa-youtube{
+                color: red;
+            }
+            .social:hover, .email:hover{
+                color: darkgray;
+                text-decoration: none;
+            }
+            blockquote{
+                border-radius: 50px;
+                border: 2px solid darkgray;
+                padding: 10px;
+            }
+            .email:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="navigator container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img src="images/Signature.png" style="height: 60px" class="pageLogo">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+                        <h1 style="color: white; font-family: monospace" class="title"><i>JJMP</i> Webpage: v1.0</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <ul class="nav justify-content-end" style="margin-right: 20px">
+                            <li>
+                                <a class="nav-item nav-link" href="#aboutMyself">
+                                    <button type="button" class="btn btn-outline-dark">About Me</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-item nav-link" href="#carouselTitle">
+                                    <button type="button" class="btn btn-outline-dark">Drawings</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-item nav-link" href="#ContactInfo">
+                                    <button type="button" class="btn btn-outline-dark">Contact Me</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br>
+        <main class="text-center">
+            <div class="container-fluid">
+                <div class="row justify-content-around">
+                    <div class="section1 col-lg-4 col-md-4 col-sm-12 col-xs-12"><br><br>
+                        <h1 id="aboutMyself" style="text-align: center; padding: 10px">
+                            Who am I?
+                        </h1>
+                        <p class="section1Text" style="font-size: 25px; font-family: Arial; padding: 10px; text-align: left">
+                            Hello, nice to meet you! My name is Jovan J Mangual Piña and I'm a Software Engineering student at the
+                            <a href="https://en.wikipedia.org/wiki/University_of_Puerto_Rico_at_Mayag%C3%BCez" style="color: limegreen">University of Puerto Rico, Mayaguez Campus</a>.
+                            I'm on my fourth year of university. Oh! By the way, I'm not only a programmer, but I'm also an artist; it's always been something I loved
+                            to do on my free time. I'm not that interesting of a guy so I guess that's all I got to say about myself.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><br><br><br>
+                        <a href="images/PictureOfMe.jpeg">
+                            <img src="images/PictureOfMe.jpeg" class="PictureOfMe img-fluid" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-fluid">
+                <div class="row justify-content-around">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img src="images/JMPLogoViolet.png" class="LogoOnPage img-fluid" style="border-radius: 100%">
+                    </div>
+                    <div class="section2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <h1 class="section2Title" style="text-align: center;padding: 10px">
+                            What is this Web-Page for?
+                        </h1>
+                        <p style="font-size: 25px; font-family: Arial; text-align: left; padding: 10px">
+                            Nothing. This web-page is for educational and entertainment purposes only. I wanted to learn a new programming language so I chose
+                            <a href="https://en.wikipedia.org/wiki/HTML5" style="color: orange">HTML</a>
+                            and
+                            <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"style="color: blue">CSS</a>.
+                            As you can see, the web-page isn't <i>"Awesome!"</i>
+                            or <i>"Wow!"</i> and it's because this is my first ever web-page. I have a lot to learn so I have to start somewhere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1>
+                            What Programming Languages do I know or have learned?
+                        </h1>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <img src="images/python.png" class="icon python-icon" style="width: 250px">
+                        <h2 style="color: dimgrey"><i>Python</i></h2>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <img src="images/java.png" class="icon java-icon" style="width: 250px">
+                        <h2 style="color: dimgrey"><i>Java</i></h2>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <img src="images/html5.png" class="icon html-icon" style="width: 250px">
+                        <h2 style="color: dimgrey"><i>HTML</i></h2>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <img src="images/css3.png" class="icon css-icon" style="width: 250px">
+                        <h2 style="color: dimgrey"><i>CSS</i></h2>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <h1 style="text-align: center" id="carouselTitle">
+                            Remember I said I was an artist?<br>Here are some of my works.
+                        </h1>
+                    </div>
+                    <div id="MyCarousel" class="carousel slide col-lg-12 col-md-12 col-sm-12 col-xs-12" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#MyCarousel" data-slide-to="0" class="active" style="background-color: black"></li>
+                            <li data-target="#MyCarousel" data-slide-to="1" style="background-color: black"></li>
+                            <li data-target="#MyCarousel" data-slide-to="2" style="background-color: black"></li>
+                            <li data-target="#MyCarousel" data-slide-to="3" style="background-color: black"></li>
+                            <li data-target="#MyCarousel" data-slide-to="4" style="background-color: black"></li>
+                        </ol>
+                        <div class="carousel-inner text-center" style="margin-bottom: 15px">
+                            <div class="carousel-item active">
+                                <img src="carouselImgaes/Pic1.jpg" style="height: 500px; border-radius: 50px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="carouselImgaes/Pic3.png" style="height: 500px; border-radius: 50px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="carouselImgaes/Pic4.jpg" style="height: 500px; border-radius: 50px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="carouselImgaes/Pic5.jpg" style="height: 500px; border-radius: 50px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="carouselImgaes/Pic6.png" style="height: 500px; border-radius: 50px">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#MyCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#MyCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h1 id="ContactInfo"><u>Contact Information:</u></h1><br>
+                        <p style="font-size: 30px">
+                            E-Mail: <a href="mailto: jovan.mangual@upr.edu" class="email">jovan.mangual@upr.edu</a><br>
+                            Phone: (939) 239-7343
+                        </p>
+                        <a href="https://www.facebook.com/profile.php?id=100008974110387" class="fa fa-facebook social"></a>
+                        <a href="https://www.linkedin.com/in/jovan-j-mangual-pina-666459177/" class="fa fa-linkedin social"></a>
+                        <a href="https://www.youtube.com/channel/UCXq4TjBR_3Wz4_YRqs2qSNA?view_as=subscriber" class="fa fa-youtube social"></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <blockquote class="blockquote text-center" style="font-size: 30px">
+                            <p>"It's going to be hard, but hard doesn't mean it's impossible."</p>
+                            <div class="blockquote-footer">
+                                <cite>Anonymous
+                            </div>
+                    </div>
+                </div>
+            </div><br>
+        </main>
+        <footer class="text-center" id="footer" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <h4 style="font-family: Arial; font-weight: lighter; color: white; padding: 10px;">
+                            <i>&copy;2019 JJMP</i>
+                        </h4>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a href="#top"><button type="button" class="btn btn-outline-dark">Top</button> </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
